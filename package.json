@@ -2,7 +2,8 @@
   "name": "readme-generator",
   "version": "1.0.0",
   "description": "Bootcamp week 11 challenge",
-  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/Fezzer/readme-generator#readme",
   "dependencies": {
     "inquirer": "^9.1.4"
+  },
+  "engines": {
+    "node": ">=14.16"
   }
 }
