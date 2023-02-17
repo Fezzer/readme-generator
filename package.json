@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Fezzer/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^9.1.4",
+    "inquirer-autocomplete-prompt": "^3.0.0"
   },
   "engines": {
     "node": ">=14.16"
