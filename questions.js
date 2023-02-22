@@ -2,6 +2,16 @@ export function getQuestions(licenses) {
   return [
     {
       type: "input",
+      name: "github",
+      message: "Enter your GitHub user name."
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Enter your email address."
+    },
+    {
+      type: "input",
       name: "title",
       message: "Enter the title of your project.",
     },

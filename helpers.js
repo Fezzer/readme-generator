@@ -28,10 +28,12 @@ export function createReadMeText(answers, licenses) {
     `- [License](#license)\n` +
     `- [Contributing](#contributing)\n` +
     `- [Tests](#tests)\n\n` +
+    `- [Questions](#questions)\n\n` +
     `## Description\n${answers.description}\n\n` +
     `## Installation\n${answers.installation}\n\n` +
     `## Usage\n${answers.usage}\n\n` +
     `## License\nThis repo is licensed under ${answers.license}.\n\n` +
     `## Contributing\n${answers.contributing}\n\n` +
-    `## Tests\n${answers.tests}`;
+    `## Tests\n${answers.tests}\n\n` +
+    `## Questions\nIf you have any questions, please contact me via [GitHub](https://github.com/${answers.github}) or on email, <${answers.email}>.`;
 }

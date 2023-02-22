@@ -1,4 +1,6 @@
 export const defaultAnswers = {
+  github: "fezzer",
+  email: "me@somewhere.com",
   title: "Example project",
   description: "This is the description.",
   installation: "These are the installation instructions.",
