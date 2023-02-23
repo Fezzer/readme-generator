@@ -3,32 +3,38 @@ export function getQuestions(licenses) {
     {
       type: "input",
       name: "github",
-      message: "Enter your GitHub user name."
+      message: "Enter your GitHub user name.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "input",
       name: "email",
-      message: "Enter your email address."
+      message: "Enter your email address.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "input",
       name: "title",
       message: "Enter the title of your project.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "input",
       name: "description",
       message: "Enter a description of your project.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "input",
       name: "installation",
       message: "Enter the installation instructions for your project.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "input",
       name: "usage",
       message: "Enter the usage information for your project.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "autocomplete",
@@ -45,11 +51,21 @@ export function getQuestions(licenses) {
       type: "input",
       name: "contributing",
       message: "Enter the contribution guidelines for your project.",
+      validate: NonEmptyStringValidator
     },
     {
       type: "input",
       name: "tests",
       message: "Enter the testing criteria for your project.",
+      validate: NonEmptyStringValidator
     }
   ];
+}
+
+function NonEmptyStringValidator(value) {
+  if (value.trim() !== "") {
+    return true;
+  }
+
+  return "Please enter a valid answer."
 }
