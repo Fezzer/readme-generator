@@ -1,3 +1,8 @@
+/**
+ * Gets the questions to ask in Inquirer needed to generate a readme file.
+ * @param {Array} licenses The license options.
+ * @returns An array of Inquirer questions.
+ */
 export function getQuestions(licenses) {
   return [
     {
@@ -62,6 +67,11 @@ export function getQuestions(licenses) {
   ];
 }
 
+/**
+ * Validates that the specified value is not entirely whitespace. 
+ * @param {string} value The value to validate.
+ * @returns True if the value is valid, otherwise an error message.
+ */
 function NonEmptyStringValidator(value) {
   if (value.trim() !== "") {
     return true;
