@@ -20,6 +20,8 @@ There is a sample readme included in the repo here, `./samples/README.md`.
 
 ![questions](./assets/images/screenshot01.png)
 
+A demo of the app can be viewed here, <https://www.youtube.com/watch?v=Ogfr-Te5Hc4>.
+
 ## Credits
 
 The question prompts are provided by inquirer, <https://www.npmjs.com/package/inquirer>.
