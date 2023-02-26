@@ -10,9 +10,7 @@ const questions = getQuestions(licenses);
 
 inquirer.registerPrompt("autocomplete", inquirerPrompt);
 
-const answers = await inquirer
-  .prompt(questions, useDefaultAnswers ? defaultAnswers : null)
-  .then(answers => answers);
+const answers = await inquirer.prompt(questions, useDefaultAnswers ? defaultAnswers : null);
   
 const data = createReadMeText(answers, licenses);
 
